@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- test -->
+    <!-- <div class="m-3  p-10 bg-gradient-to-r from-yellow-400 via-green-400 to-blue-400 text-white text-center">
+        Hello World ! I'm using Tailwind CSS Now ~
+      </div> -->
+
+    <div class="container topsection p-10 text-grayCustom">
+        <img src="pics/Midjourney_profile.JPG" alt=""
+            class="rounded-full w-1/6 sm:w-1/12 shadow-lg hover:scale-125 transition-transform">
+        <h2 class="mx-3 my-5 font-bold">Michelle Chang</h2>
+        <p class="text-xs mt-2 font-medium leading-5">一位喜歡在不同領域探索的「自主學習者」。👩🏻‍💻<br>
+            以實作專案來促成「用以致學」的學習方式。</p>
+    </div>
+    <div class="container cards  text-grayCustom font-normal ">
+        <div class="card">
+            <div class="icon">
+                <box-icon name='globe' size="2em" color="#E7725C"></box-icon>
+            </div>
+            <a href="https://www.mlearning.url.tw" target="_blank" class="">Mlearning | | 個人網站</a>
+            <div class="three-dots" onclick="showModal('web')">
+                <box-icon name='dots-horizontal-rounded' size="1.5em" color="#E7725C"></box-icon>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <box-icon type="logo" name="facebook-square" size="2em" color="#E7725C"></box-icon>
+            </div>
+            <a href="https://www.facebook.com/michellechang2006" class="">Facebook</a>
+            <div class="three-dots" onclick="showModal('fb')">
+                <box-icon name='dots-horizontal-rounded' size="1.5em" color="#E7725C"></box-icon>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <box-icon type='logo' name='github' size="2em" color="#E7725C"></box-icon>
+            </div>
+            <a href="https://github.com/michellechang2006">Github</a>
+            <div class="three-dots" onclick="showModal('github')">
+                <box-icon name='dots-horizontal-rounded' size="1.5em" color="#E7725C"></box-icon>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <box-icon type='logo' name='instagram' size="2em" color="#E7725C"></box-icon>
+            </div>
+            <a href="https://www.instagram.com/michellechanghomeschooling" class="">Instagram</a>
+            <div class="three-dots" onclick="showModal('ig')">
+                <box-icon name='dots-horizontal-rounded' size="1.5em" color="#E7725C"></box-icon>
+            </div>
+        </div>
+        <div class="sliders my-2">
+
+        </div>
+        <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <div class="modal-container modal-web hidden bg-grayCustom bg-opacity-50 w-screen z-50 top-0 h-screen fixed  max-w-none "
+        onclick="hiddenAllModal()">
+        <div class=" bg-white px-5 w-80 h-72 md:h-64 py-10 rounded-3xl modal-inside relative">
+            <div class="close-btn absolute " onclick="hiddenAllModal()">
+                <box-icon name='x' size="2em"></box-icon>
+            </div>
+            <div class="z-50">
+                <a target="_blank" class="share-btn modal-card"
+                    href="https://www.facebook.com/sharer.php?u=https://www.mlearning.url.tw">
+                    <box-icon class="mr-10" type="logo" name="facebook-square" size="2em" color="#E7725C"></box-icon>
+                    <p>分享到 Facebook</p>
+                    <box-icon class="ml-10" name='chevron-right' type='solid' size="1.8em" color="#E7725C"></box-icon>
+                </a>
+                <a target="_blank" class="share-btn modal-card"
+                    href="https://social-plugins.line.me/lineit/share?url=https://www.mlearning.url.tw">
+                    <!-- <box-icon class="mr-10" type="logo" name="facebook-square" size="2.3em" color="#E7725C"></box-icon> -->
+                    <img class="mr-10 line-logo" src="pics/LINE_LOGO.svg" alt="" srcset="">
+                    <p>分享到 Line</p>
+                    <box-icon class="ml-10" name='chevron-right' type='solid' size="1.8em" color="#E7725C"></box-icon>
+                </a>
+                <a target="_blank" class="share-btn modal-card" onclick="copyUrl('web')">
+                    <box-icon class="mr-10" name='link' size="2em" color="#E7725C"></box-icon>
+                    <p>拷貝連結</p>
+                    <box-icon class="ml-10" name='chevron-right' type='solid' size="1.8em" color="#E7725C"></box-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="modal-container modal-fb bg-grayCustom bg-opacity-50 w-screen z-50 top-0 h-screen fixed  max-w-none "
+        onclick="hiddenAllModal()">
+        <div class=" bg-white px-5 w-80 h-72 md:h-64 py-10 rounded-3xl modal-inside relative">
+            <div class="close-btn absolute " onclick="hiddenAllModal()">
+                <box-icon name='x' size="2em"></box-icon>
+            </div>
+            <div class="z-50">
+                <a target="_blank" class="share-btn modal-card"
+                    href="https://www.facebook.com/sharer.php?u=https://www.facebook.com/michellechang2006">
+                    <box-icon class="mr-10" type="logo" name="facebook-square" size="2em" color="#E7725C"></box-icon>
+                    <p>分享到 Facebook</p>
+                    <box-icon class="ml-10" name='chevron-right' type='solid' size="1.8em" color="#E7725C"></box-icon>
+                </a>
+                <a target="_blank" class="share-btn modal-card"
+                    href="https://social-plugins.line.me/lineit/share?url=https://www.facebook.com/michellechang2006">
+                    <!-- <box-icon class="mr-10" type="logo" name="facebook-square" size="2.3em" color="#E7725C"></box-icon> -->
+                    <img class="mr-10 line-logo" src="pics/LINE_LOGO.svg" alt="" srcset="">
+                    <p>分享到 Line</p>
+                    <box-icon class="ml-10" name='chevron-right' type='solid' size="1.8em" color="#E7725C"></box-icon>
+                </a>
+                <a target="_blank" class="share-btn modal-card" onclick="copyUrl('fb')">
+                    <box-icon class="mr-10" name='link' size="2em" color="#E7725C"></box-icon>
+                    <p>拷貝連結</p>
+                    <box-icon class="ml-10" name='chevron-right' type='solid' size="1.8em" color="#E7725C"></box-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="modal-container modal-github bg-grayCustom bg-opacity-50 w-screen z-50 top-0 h-screen fixed  max-w-none "
+        onclick="hiddenAllModal()">
+        <div class=" bg-white px-5 w-80 h-72 md:h-64 py-10 rounded-3xl modal-inside relative">
+            <div class="close-btn absolute " onclick="hiddenAllModal()">
+                <box-icon name='x' size="2em"></box-icon>
+            </div>
+            <div class="z-50">
+                <a target="_blank" class="share-btn modal-card"
+                    href="https://www.facebook.com/sharer.php?u=https://github.com/michellechang2006">
+                    <box-icon class="mr-10" type="logo" name="facebook-square" size="2em" color="#E7725C"></box-icon>
+                    <p>分享到 Facebook</p>
+                    <box-icon class="ml-10" name='chevron-right' type='solid' size="1.8em" color="#E7725C"></box-icon>
+                </a>
+                <a target="_blank" class="share-btn modal-card"
+                    href="https://social-plugins.line.me/lineit/share?url=https://github.com/michellechang2006">
+                    <!-- <box-icon class="mr-10" type="logo" name="facebook-square" size="2.3em" color="#E7725C"></box-icon> -->
+                    <img class="mr-10 line-logo" src="pics/LINE_LOGO.svg" alt="" srcset="">
+                    <p>分享到 Line</p>
+                    <box-icon class="ml-10" name='chevron-right' type='solid' size="1.8em" color="#E7725C"></box-icon>
+                </a>
+                <a target="_blank" class="share-btn modal-card" onclick="copyUrl('github')">
+                    <box-icon class="mr-10" name='link' size="2em" color="#E7725C"></box-icon>
+                    <p>拷貝連結</p>
+                    <box-icon class="ml-10" name='chevron-right' type='solid' size="1.8em" color="#E7725C"></box-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="modal-container modal-ig bg-grayCustom bg-opacity-50 w-screen z-50 top-0 h-screen fixed  max-w-none "
+        onclick="hiddenAllModal()">
+        <div class=" bg-white px-5 w-80 h-72 md:h-64 py-10 rounded-3xl modal-inside relative">
+            <div class="close-btn absolute " onclick="hiddenAllModal()">
+                <box-icon name='x' size="2em"></box-icon>
+            </div>
+            <div class="z-50">
+                <a target="_blank" class="share-btn modal-card"
+                    href="https://www.facebook.com/sharer.php?u=https://github.com/michellechang2006">
+                    <box-icon class="mr-10" type="logo" name="facebook-square" size="2em" color="#E7725C"></box-icon>
+                    <p>分享到 Facebook</p>
+                    <box-icon class="ml-10" name='chevron-right' type='solid' size="1.8em" color="#E7725C"></box-icon>
+                </a>
+                <a target="_blank" class="share-btn modal-card"
+                    href="https://social-plugins.line.me/lineit/share?url=https://github.com/michellechang2006">
+                    <!-- <box-icon class="mr-10" type="logo" name="facebook-square" size="2.3em" color="#E7725C"></box-icon> -->
+                    <img class="mr-10 line-logo" src="pics/LINE_LOGO.svg" alt="" srcset="">
+                    <p>分享到 Line</p>
+                    <box-icon class="ml-10" name='chevron-right' type='solid' size="1.8em" color="#E7725C"></box-icon>
+                </a>
+                <a target="_blank" class="share-btn modal-card" onclick="copyUrl('ig')">
+                    <box-icon class="mr-10" name='link' size="2em" color="#E7725C"></box-icon>
+                    <p>拷貝連結</p>
+                    <box-icon class="ml-10" name='chevron-right' type='solid' size="1.8em" color="#E7725C"></box-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/boxicons@2.1.3.js"></script>
+    <script src="js/sliders.js"></script>
+    <script src="js/three_dots.js"></script>
+    <script src="js/copy.js"></script>
+    <script src="js/modals.js"></script>
+    <script src="js/sliders_data.js"></script>
+
+</body>
+
+</html>
