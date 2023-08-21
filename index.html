@@ -7,7 +7,7 @@
     <meta name="description" content="Michelle Chang | | 個人主頁">
     <meta name="author" content="Michelle Chang">
     <!-- social media thumbnail -->
-    <meta property="og:image" content="https://michellechang2006.github.io/pics/social_media_thumbnail.webp">
+    <meta property="og:image" content="pics/social_media_thumbnail.webpsocial_media_thumbnail.webp">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="627">
@@ -22,7 +22,7 @@
     <link rel="apple-touch-icon" href="pics/Midjourney_profile.JPG">
 
     <!-- favicon -->
-    <link href="pics/Midjourney_profile.JPG" rel="shortcut icon" />
+    <link href="pics/favicon.ico" rel="shortcut icon" />
     <link rel="stylesheet" href="./css/app.css">
     <link rel="stylesheet" href="css/custom.css">
     <title>Michelle Chang | | 個人主頁</title>
@@ -33,10 +33,25 @@
     <!-- <div class="m-3  p-10 bg-gradient-to-r from-yellow-400 via-green-400 to-blue-400 text-white text-center">
         Hello World ! I'm using Tailwind CSS Now ~
       </div> -->
+    <div class="top-bar-white fixed md:top-3 top-2  flex justify-end items-center top-bar  text-grayCustom z-40">
+        <div class="top-bar-btn-white flex justify-center rounded-full items-center bg-white  border border-lightGray h-12 w-12  md:mr-2 hover:scale-125 transition-transform"
+            onclick="showModal('top-bar')">
+            <box-icon name='dots-horizontal-rounded' size="1.5em" color="#E7725C"></box-icon>
+        </div>
+    </div>
+    <div
+        class="top-bar-gray fixed top-3 flex justify-between items-center top-bar bg-white border border-lightGray bg-opacity-30 backdrop-blur-md shadow-sm rounded-full text-grayCustom z-40 hidden  top-0  md:px-1  px-3">
+        <img src="pics/Midjourney_profile.JPG" alt="" class="rounded-full h-12 w-12  md:h-12 md:w-12  md:ml-2 ">
+        <h2 class="mx-3 my-5 font-bold">Michelle Chang</h2>
+        <div class="top-bar-btn-gray flex justify-center rounded-full items-center bg-grayCustom border border-lightGray h-12 w-12 md:mr-2 hover:bg-secondary transition-colors"
+            onclick="showModal('top-bar')">
+            <box-icon name='dots-horizontal-rounded' size="1.5em" color="#FFF"></box-icon>
+        </div>
+    </div>
 
     <div class="container topsection p-10 text-grayCustom">
         <img src="pics/Midjourney_profile.JPG" alt=""
-            class="rounded-full w-1/6 sm:w-1/12 shadow-lg hover:scale-125 transition-transform">
+            class="rounded-full h-1/6 w-1/6 sm:w-1/12 shadow-lg  hover:scale-125 transition-transform">
         <h2 class="mx-3 my-5 font-bold">Michelle Chang</h2>
         <p class="text-xs mt-2 font-medium leading-5">一位喜歡在不同領域探索的「自主學習者」。👩🏻‍💻<br>
             以實作專案來促成「用以致學」的學習方式。</p>
@@ -200,6 +215,45 @@
             </div>
         </div>
     </div>
+    <div class="modal-container modal-top-bar bg-grayCustom bg-opacity-50 w-screen z-50 top-0 h-screen fixed  max-w-none "
+        onclick="hiddenAllModal()">
+        <div class=" bg-white px-5 w-80 h-80 md:h-64 py-10 rounded-3xl modal-inside relative">
+            <div class="close-btn absolute " onclick="hiddenAllModal()">
+                <box-icon name='x' size="2em"></box-icon>
+            </div>
+            <div class="z-50">
+                <a target="_blank" class="share-btn modal-card"
+                    href="https://www.facebook.com/sharer.php?u=https://michellechang2006.github.io/">
+                    <box-icon class="mr-10" type="logo" name="facebook-square" size="2em" color="#E7725C"></box-icon>
+                    <p>分享到 Facebook</p>
+                    <box-icon class="ml-10" name='chevron-right' type='solid' size="1.8em" color="#E7725C"></box-icon>
+                </a>
+                <a target="_blank" class="share-btn modal-card"
+                    href="https://social-plugins.line.me/lineit/share?url=https://michellechang2006.github.io/">
+                    <!-- <box-icon class="mr-10" type="logo" name="facebook-square" size="2.3em" color="#E7725C"></box-icon> -->
+                    <img class="mr-10 line-logo" src="pics/LINE_LOGO.svg" alt="" srcset="">
+                    <p>分享到 Line</p>
+                    <box-icon class="ml-10" name='chevron-right' type='solid' size="1.8em" color="#E7725C"></box-icon>
+                </a>
+                <a target="_blank" class="share-btn modal-card" onclick="copyUrl('top-bar')">
+                    <box-icon class="mr-10" name='link' size="2em" color="#E7725C"></box-icon>
+                    <p>拷貝連結</p>
+                    <box-icon class="ml-10" name='chevron-right' type='solid' size="1.8em" color="#E7725C"></box-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div>
+        <p>女友通常生意動畫字體作出第三發行緊緊，勝利大家都說明監督有時候命運具體否則物品魔法，職務認真現代化你要能學到可能走到下來實行各自親自，群眾經驗書庫雜誌一眼通過我國，奇蹟針對不代表此處會計，突然樓上解決方案選手，請點擊我說查找包裝原料消除年度，起點書記，大。
+        </p>
+        <p>女友通常生意動畫字體作出第三發行緊緊，勝利大家都說明監督有時候命運具體否則物品魔法，職務認真現代化你要能學到可能走到下來實行各自親自，群眾經驗書庫雜誌一眼通過我國，奇蹟針對不代表此處會計，突然樓上解決方案選手，請點擊我說查找包裝原料消除年度，起點書記，大。
+        </p>
+        <p>女友通常生意動畫字體作出第三發行緊緊，勝利大家都說明監督有時候命運具體否則物品魔法，職務認真現代化你要能學到可能走到下來實行各自親自，群眾經驗書庫雜誌一眼通過我國，奇蹟針對不代表此處會計，突然樓上解決方案選手，請點擊我說查找包裝原料消除年度，起點書記，大。
+        </p>
+    </div> -->
+
+
 
     <script src="js/boxicons@2.1.3.js"></script>
     <script src="js/sliders.js"></script>
@@ -207,7 +261,7 @@
     <script src="js/copy.js"></script>
     <script src="js/modals.js"></script>
     <script src="js/sliders_data.js"></script>
-
+    <script src="js/scroll.js"></script>
 </body>
 
 </html>

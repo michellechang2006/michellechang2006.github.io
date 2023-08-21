@@ -2,8 +2,10 @@ let modals = {
     "web": document.querySelector(".modal-web"),
     "fb": document.querySelector(".modal-fb"),
     "github": document.querySelector(".modal-github"),
-    "ig": document.querySelector(".modal-ig")
+    "ig": document.querySelector(".modal-ig"),
+    "top-bar": document.querySelector(".modal-top-bar"),
 }
+
 let allModals = document.querySelectorAll(".modal-container")
 let dotsEls = document.querySelectorAll(".three-dots")
 

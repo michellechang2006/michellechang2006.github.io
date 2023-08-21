@@ -6,7 +6,7 @@
 @import "tailwindcss/utilities";
 
 .card {
-    @apply bg-primary m-3 p-5 px-10 w-96 sm:w-1/2 rounded-full hover:shadow-lg shadow-md flex justify-between items-center flex-row;
+    @apply bg-primary m-3 p-5 px-10 w-96 sm:w-1/2 rounded-full hover:shadow-lg shadow-md transition-shadow flex justify-between items-center flex-row;
 }
 
 .modal-container {
@@ -55,4 +55,6 @@ body {
         float: left;
     }
 }
+
+
 

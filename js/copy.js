@@ -5,7 +5,8 @@ let urls = {
     "web": 'https://www.mlearning.url.tw',
     "fb": 'https://www.facebook.com/michellechang2006/',
     "github": 'https://github.com/michellechang2006',
-    "ig": 'https://www.instagram.com/michellechanghomeschooling'
+    "ig": 'https://www.instagram.com/michellechanghomeschooling',
+    "top-bar":"michellechang2006.github.io"
 }
 
 function copyUrl(urlName) {
