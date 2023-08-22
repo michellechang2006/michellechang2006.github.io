@@ -9,7 +9,7 @@ body {
 
 .dot {
   transition: background-color 0.6s ease;
-  transform: translateY(-2.5em);
+  transform: translateY(-3em);
 }
 
 .slider {
@@ -65,6 +65,7 @@ body {
     height: 10vh;
   }
 }
+
 @media screen and (max-width:768px) {
   .top-bar-white {
     right: 1.5rem;
