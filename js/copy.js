@@ -2,7 +2,7 @@
 
 
 let urls = {
-    "web": 'https://www.mlearning.url.tw',
+    "web": 'https://github.com/michellechang2006/Javascript-basic-playground',
     "fb": 'https://www.facebook.com/michellechang2006/',
     "github": 'https://github.com/michellechang2006',
     "ig": 'https://www.instagram.com/michellechanghomeschooling',
